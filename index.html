@@ -74,29 +74,29 @@
                                 <form name="find-property">
                                     <label class="tenants__address">
                                         Address, Suburbs, Postcodes, or Regions
-                                        <input class="tenants__address-field" type="text" name="address-field" placeholder="Example: Wichita Falls, Texas 76301">
+                                        <input class="tenants__address-field tenants__address-field--in-filter" type="text" name="address-field" placeholder="Example: Wichita Falls, Texas 76301">
                                     </label>
-                                    <label class="tenants__checkbox">
-                                        <input type="checkbox" name="include-suburbs">
+                                    <label class="tenants__check-includes">
+                                        <input class="tenants__checkbox tenants__checkbox--in-form" type="checkbox" name="include-suburbs">
                                         Include surrounding suburbs
                                     </label>
-                                    <label class="tenants__property-select">
+                                    <label class="tenants__property-choose flex-row">
                                         Property Type :
-                                        <select>
+                                        <select name="property-select" class="tenants__property-select select">
                                             <option value="Select one" selected>Select one</option>
                                             <option value="Select two">Select two</option>
                                             <option value="Select three">Select three</option>
                                         </select>
                                     </label>
-                                    <label class="tenants__bedrooms-select">
+                                    <label class="tenants__bedrooms-choose flex-row">
                                         Bedrooms :
-                                        <select>
+                                        <select name="bedrooms-select" class="tenants__bedrooms-select select">
                                             <option value="Select one" selected>Select one</option>
                                             <option value="Select two">Select two</option>
                                             <option value="Select three">Select three</option>
                                         </select>
                                     </label>
-                                    <button type="submit">Search</button>
+                                    <button type="submit" class="tenants__search search--in-form">Search</button>
                                 </form>
                             </div>
                         <div class="oweners__wrap">

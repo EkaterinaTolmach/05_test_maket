@@ -187,6 +187,116 @@
 .oweners__carousel-controls-item--active {
     background-color: #2c5f7f;
 }
+.oweners__filter {
+    max-width: 419px;
+}
 .oweners__filter-choose {
     justify-content: flex-start;
+    font-family: "Arial Rounded MT Bold", arial, sans-serif;
+    font-size: 22px;;
+}
+.oweners__tenants-name {
+    padding: 0 20px;
+    background-color: #5596bf;
+    color: #ffffff;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+.oweners__oweners-name {
+    padding: 0 20px;
+    background-color: #c2f2ed;
+    color: #4b83a6;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tenants__wrap {
+    background-color: #5596bf;
+    padding: 18px 40px 0;
+    display: flex;
+    flex-direction: column;
+}
+.tenants__checkbox--in-form {
+    margin-left: 8px;
+}
+.tenants__address {
+    color: #ffffff;
+    font-family: "Arial MT", arial, sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+}
+.tenants__address-field {
+    width: 100%;
+    height: 44px;
+    border: 3px solid #316e94;
+    border-radius: 8px;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.11) 0%, rgba(0, 0, 0, 0.11) 100%);
+    color: #347095;
+    font-family: "MS Sans Serif", arial, sans-serif;
+    font-size: 17px;
+    padding-left: 19px;
+}
+.tenants__address-field::placeholder {
+    color: #347095;
+}
+.tenants__address-field:focus::placeholder {
+    color: transparent;
+    transition: 0.2s;
+}
+.tenants__address-field--in-filter {
+    margin: 17px 0 10px;
+}
+.tenants__check-includes {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-family: "Arial MT", arial, sans-serif;
+    font-size: 16px;
+}
+.tenants__checkbox {
+    margin-right: 11px;
+    width: 18px;
+    height: 18px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.07);
+    border: 1px solid #bbbbbb;
+    border-radius: 2px;
+    background-image: linear-gradient(to top, rgba(187, 187, 187, 0.4) 0%, rgba(209, 209, 209, 0.4) 50%, rgba(188, 188, 188, 0.4) 52%, rgba(187, 187, 187, 0.4) 100%);
+}
+.tenants__property-choose, .tenants__bedrooms-choose {
+    justify-content: flex-end;
+    align-items: center;
+    color: #ffffff;
+    font-family: "Arial MT", arial, sans-serif;
+    font-size: 16px;
+    margin-top: 19px;
+}
+.select {
+    width: 204px;
+    height: 32px;
+    color: #6693ae;
+    margin-left: 20px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.07), inset 0 0 0 2px #fcfdfd;
+    border: 1px solid #bbbbbb;
+    background-image: linear-gradient(to top, rgba(244, 244, 244, 0.4) 0%, rgba(243, 243, 243, 0.4) 50%, rgba(255, 255, 255, 0.4) 52%, rgba(255, 255, 255, 0.4) 100%);
+}
+.select option {
+    color: #6693ae;
+}
+.tenants__search {
+    width: 204px;
+    height: 47px;
+    border: 3px solid #d7d7d7;
+    background-image: linear-gradient(to top, #498ab2 0%, #6bb2dd 100%);
+    color: #ffffff;
+    font-family: "Arial MT", arial, sans-serif;
+    font-size: 22px;
+    border-radius: 8px;
+}
+.search--in-form {
+    margin-top: 45px;
+    margin-left: 135px;
 }

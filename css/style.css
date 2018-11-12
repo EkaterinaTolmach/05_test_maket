@@ -130,7 +130,7 @@
 .oweners__wrap {
     display: none;
 }
-.tenants__radio, .oweners__radio {
+.oweners__tenants-radio, .oweners__oweners-radio {
     display: none;
 }
 .oweners__carousel-wrap {
@@ -176,4 +176,7 @@
 }
 .oweners__carousel-controls-item--active {
     background-color: #2c5f7f;
+}
+.oweners__filter-choose {
+    justify-content: flex-start;
 }

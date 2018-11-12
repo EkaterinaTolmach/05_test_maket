@@ -13,6 +13,11 @@
     src: url("../fonts/MicrosoftSansSerif.woff"), url("../fonts/MicrosoftSansSerif.woff2") ;
     font-weight: 400;
 }
+@font-face {
+    font-family: "Arial MT";
+    src: url("../fonts/arial.woff2"), url("../fonts/arial.woff") ;
+    font-weight: 400;
+}
 .flex-row {
     display: flex;
     flex-direction: row;

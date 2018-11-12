@@ -18,6 +18,16 @@
     src: url("../fonts/arial.woff2"), url("../fonts/arial.woff") ;
     font-weight: 400;
 }
+@font-face {
+    font-family: "Arial Rounded MT Bold";
+    src: url("../fonts/ArialRoundedMTBold.woff"), url("../fonts/ArialRoundedMTBold.woff2") ;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Lucida Sans";
+    src: url("../fonts/LucidaSans.woff"), url("../fonts/LucidaSans.woff2") ;
+    font-weight: 400;
+}
 * {
     box-sizing: border-box;
 }

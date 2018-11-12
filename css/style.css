@@ -21,3 +21,11 @@
     margin: 0 auto;
     max-width: 980px;
 }
+.header__logo {
+    max-width: 281px;
+}
+.logo {
+    width: 281px;
+    height: 59px;
+    background: url("../img/logo-main.png") no-repeat center center;
+}

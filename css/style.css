@@ -137,9 +137,6 @@
     max-width: 980px;
     padding: 15px 20px 15px 8px;
 }
-.oweners__wrap {
-    display: none;
-}
 .oweners__tenants-radio, .oweners__oweners-radio {
     display: none;
 }
@@ -190,35 +187,39 @@
 .oweners__filter {
     max-width: 419px;
 }
-.oweners__filter-choose {
-    justify-content: flex-start;
-    font-family: "Arial Rounded MT Bold", arial, sans-serif;
-    font-size: 22px;;
-}
 .oweners__tenants-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    height: 44px;
     padding: 0 20px;
     background-color: #5596bf;
     color: #ffffff;
-    height: 44px;
+    margin-right: 5px;
+    font-family: "Arial Rounded MT Bold", arial, sans-serif;
+    font-size: 22px;
+}
+.oweners__oweners-name {
+    width: 132px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 5px;
-}
-.oweners__oweners-name {
+    height: 44px;
     padding: 0 20px;
     background-color: #c2f2ed;
     color: #4b83a6;
-    height: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: "Arial Rounded MT Bold", arial, sans-serif;
+    font-size: 22px;
 }
-.tenants__wrap {
+.tenants__wrap, .oweners__wrap {
     background-color: #5596bf;
     padding: 18px 40px 0;
     display: flex;
     flex-direction: column;
+}
+.oweners__wrap {
+    display: none;
 }
 .tenants__checkbox--in-form {
     margin-left: 8px;
@@ -299,4 +300,18 @@
 .search--in-form {
     margin-top: 45px;
     margin-left: 135px;
+}
+.oweners__oweners-radio:checked ~ .tenants__wrap {
+    display: none;
+}
+.oweners__oweners-radio:checked ~ .oweners__tenants-name {
+    background-color: #c2f2ed;
+    color: #4b83a6;
+}
+.oweners__oweners-radio:checked ~ .oweners__oweners-name {
+    background-color: #5596bf;
+    color: #ffffff;
+}
+.oweners__oweners-radio:checked ~ .oweners__wrap {
+    display: flex;
 }

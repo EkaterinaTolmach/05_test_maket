@@ -60,16 +60,11 @@
                         </div>
                     </div>
                     <div class="oweners__filter">
-                        <div class="oweners__filter-choose flex-row">
-                            <label class="oweners__tenants-title">
-                                <div class="oweners__tenants-name">Tenants</div>
-                                <input class="oweners__tenants-radio" type="radio" name="tenants-oweners">
-                            </label>
-                            <label class="oweners__oweners-title">
-                                <div class="oweners__oweners-name">Oweners</div>
-                                <input class="oweners__oweners-radio" type="radio" name="tenants-oweners">
-                            </label>
-                        </div>
+                        <input class="oweners__tenants-radio" id="tenants-filter" type="radio" name="tenants-oweners">
+                        <input class="oweners__oweners-radio" id="oweners-filter" type="radio" name="tenants-oweners">
+                        <label for="tenants-filter" class="oweners__tenants-name">Tenants</label>
+
+                        <label for="oweners-filter" class="oweners__oweners-name">Oweners</label>
                         <div class="tenants__wrap">
                                 <form name="find-property">
                                     <label class="tenants__address">
@@ -100,34 +95,34 @@
                                 </form>
                             </div>
                         <div class="oweners__wrap">
-                                <form name="find-property">
-                                    <label class="tenants__address">
-                                        Address, Suburbs, Postcodes, or Regions
-                                        <input class="tenants__address-field" type="text" name="address-field" placeholder="Example: Wichita Falls, Texas 76301">
-                                    </label>
-                                    <label class="tenants__checkbox">
-                                        <input type="checkbox" name="include-suburbs">
-                                        Include surrounding suburbs
-                                    </label>
-                                    <label class="tenants__property-select">
-                                        Property Type :
-                                        <select>
-                                            <option value="Select one" selected>Select one</option>
-                                            <option value="Select two">Select two</option>
-                                            <option value="Select three">Select three</option>
-                                        </select>
-                                    </label>
-                                    <label class="tenants__bedrooms-select">
-                                        Bedrooms :
-                                        <select>
-                                            <option value="Select one" selected>Select one</option>
-                                            <option value="Select two">Select two</option>
-                                            <option value="Select three">Select three</option>
-                                        </select>
-                                    </label>
-                                    <button type="submit">Search</button>
-                                </form>
-                            </div>
+                            <form name="find-property">
+                                <label class="tenants__address">
+                                    Address, Suburbs, Postcodes, or Regions
+                                    <input class="tenants__address-field tenants__address-field--in-filter" type="text" name="address-field" placeholder="Example: Wichita Falls, Texas 76301">
+                                </label>
+                                <label class="tenants__check-includes">
+                                    <input class="tenants__checkbox tenants__checkbox--in-form" type="checkbox" name="include-suburbs">
+                                    Include surrounding suburbs
+                                </label>
+                                <label class="tenants__property-choose flex-row">
+                                    Property Type :
+                                    <select name="property-select" class="tenants__property-select select">
+                                        <option value="Select one" selected>Select one</option>
+                                        <option value="Select two">Select two</option>
+                                        <option value="Select three">Select three</option>
+                                    </select>
+                                </label>
+                                <label class="tenants__bedrooms-choose flex-row">
+                                    Bedrooms :
+                                    <select name="bedrooms-select" class="tenants__bedrooms-select select">
+                                        <option value="Select one" selected>Select one</option>
+                                        <option value="Select two">Select two</option>
+                                        <option value="Select three">Select three</option>
+                                    </select>
+                                </label>
+                                <button type="submit" class="tenants__search search--in-form">Search</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

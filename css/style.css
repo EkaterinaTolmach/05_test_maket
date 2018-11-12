@@ -13,19 +13,44 @@
     src: url("../fonts/MicrosoftSansSerif.woff"), url("../fonts/MicrosoftSansSerif.woff2") ;
     font-weight: 400;
 }
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .header__info {
     background: #4b83a6;
     width: 100%;
+    padding: 15px 0 16px;
 }
 .header__wrap {
     margin: 0 auto;
     max-width: 980px;
+    align-items: flex-end;
 }
 .header__logo {
     max-width: 281px;
+    padding-bottom: 5px;
 }
 .logo {
     width: 281px;
     height: 59px;
     background: url("../img/logo-main.png") no-repeat center center;
+}
+.header__logo-slogan {
+    text-align: right;
+    color: #ffffff;
+    font-family: "Microsoft New Tai Lue", arial, sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+}
+.header__contacts {
+    width: 235px;
+    color: #ffffff;
+    font-family: "A Caslon Pro", Times, serif;
+    font-size: 24px;
+}
+.header__phone {
+    text-decoration: none;
+    color: #ffffff;
 }

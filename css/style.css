@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Microsoft New Tai Lue";
+    src: url("../fonts/Microsoft NewTaiLue.woff"), url("../fonts/Microsoft NewTaiLue.woff2") ;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "A Caslon Pro";
+    src: url("../fonts/ACaslonPro-Regular.woff"), url("../fonts/ACaslonPro-Regular.woff2") ;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "MS Sans Serif";
+    src: url("../fonts/MicrosoftSansSerif.woff"), url("../fonts/MicrosoftSansSerif.woff2") ;
+    font-weight: 400;
+}

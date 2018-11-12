@@ -31,6 +31,9 @@
 * {
     box-sizing: border-box;
 }
+h2 {
+    margin: 0;
+}
 .flex-row {
     display: flex;
     flex-direction: row;
@@ -314,4 +317,39 @@
 }
 .oweners__oweners-radio:checked ~ .oweners__wrap {
     display: flex;
+}
+.services {
+    width: 100%;
+    background-image: linear-gradient(to top, #c2f2ed 0%, #c2f2ed 1%, #edfffd 100%);
+}
+.services__item--column {
+    margin-right: 50px;
+}
+.services__wrap {
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 12px 0 22px 10px;
+    justify-content: center;
+}
+.services__item-title {
+    color: #4484ad;
+    font-family: "Arial MT", arial, sans-serif;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+.services__item-title:before {
+    display: block;
+    content: "";
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    background: url("../img/ico-home.png") center no-repeat;
+}
+.services__item-descr {
+    margin-top: 15px;
+    color: #43515a;
+    font-family: "Arial MT", arial, sans-serif;
+    font-size: 13px;
+    line-height: 22px;
 }

@@ -54,3 +54,59 @@
     text-decoration: none;
     color: #ffffff;
 }
+.header__nav {
+    background: #d7d7d7;
+    width: 100%;
+    padding: 17px 0 10px;
+    border-bottom: 4px solid #4b83a6;
+}
+.header__top-menu {
+    width: 500px;
+    justify-content: space-between;
+    font-family: "MS Sans Serif", arial, sans-serif;
+    font-size: 16px;
+}
+.header__top-menu-item {
+    width: 106px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: #3a5362;
+    position: relative;
+    padding: 0 10px;
+    z-index: 100;
+    transition: 0.2s;
+}
+.header__top-menu-item:before {
+    display: none;
+    content: "";
+    position: absolute;
+    width: 106px;
+    height: 44px;
+    bottom: -18px;
+    background: url("../img/ico-menu-active.png") center no-repeat;
+    z-index: -100;
+}
+.header__top-menu-item:active:before {
+    display: block;
+}
+.header__top-menu-item:active {
+    color: #ffffff;
+}
+.header__top-menu-item:hover {
+    color: #ff9f57;
+}
+.header__sign-in, .header__sign-up {
+    text-decoration: none;
+    color: #3a5362;
+    transition: 0.2s;
+}
+.header__sign-in:hover, .header__sign-up:hover {
+    color: #ff9f57;
+}
+.header__authorization {
+    width: 130px;
+    color: #3a5362;
+    font-family: "MS Sans Serif", arial, sans-serif;
+    font-size: 16px;
+}

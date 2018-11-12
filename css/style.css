@@ -40,10 +40,9 @@ h2 {
     justify-content: space-between;
 }
 .header__info {
-    background-color: #4b83a6;
     width: 100%;
     padding: 15px 0 16px;
-    background-image: radial-gradient(circle closest-corner at 30% 100%, #6e9cb8, transparent);
+    background: #4b83a6 radial-gradient(circle closest-corner at 30% 100%, #6e9cb8, transparent);
 }
 .header__wrap {
     margin: 0 auto;
@@ -79,9 +78,9 @@ h2 {
 .header__nav {
     width: 100%;
     padding: 17px 0 10px;
-    border-bottom: 4px solid #4b83a6;
-    background-color: #d7d7d7;
-    background-image: radial-gradient(circle at 30% 50%, #eaeaea, transparent);
+    border-bottom: 4px solid transparent;
+    border-image: radial-gradient(circle closest-corner at 30% 0%, #6e9cb8, #4b83a6) 1;
+    background: #d7d7d7 radial-gradient(circle at 30% 50%, #eaeaea, transparent);
 }
 .header__top-menu {
     width: 500px;
@@ -135,8 +134,7 @@ h2 {
 }
 .oweners {
     width: 100%;
-    background-color: #4b83a6;
-    background-image: radial-gradient(circle closest-corner at 30% 0%, #6e9cb8, transparent)
+    background: #4b83a6 linear-gradient(to top right, #316c92 0%, #5289ad 25%, #5696bd 40%, #3686b8 60%, #5289ad 75%, #316c92 100%);
 }
 .oweners__container {
     margin: 0 auto;

@@ -198,6 +198,7 @@ h2 {
     justify-content: center;
     align-items: center;
     float: left;
+    border-radius: 10px 10px 0 0;
     height: 44px;
     padding: 0 20px;
     background-color: #5596bf;
@@ -211,6 +212,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px 10px 0 0;
     height: 44px;
     padding: 0 20px;
     background-color: #c2f2ed;
@@ -219,9 +221,9 @@ h2 {
     font-size: 22px;
 }
 .tenants__wrap, .oweners__wrap {
-    /*background-color: #5596bf;*/
     padding: 18px 40px 0;
     display: flex;
+    border-radius: 0 10px 0;
     flex-direction: column;
     background: linear-gradient(#5596bf 0%, transparent 60%);
 }

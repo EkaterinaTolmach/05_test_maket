@@ -110,3 +110,28 @@
     font-family: "MS Sans Serif", arial, sans-serif;
     font-size: 16px;
 }
+.oweners {
+    width: 100%;
+    background: #4b83a6;
+}
+.oweners__container {
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 15px 20px 15px 8px;
+}
+.oweners__wrap {
+    display: none;
+}
+.tenants__radio, .oweners__radio {
+    display: none;
+}
+.oweners__carousel-wrap {
+    max-width: 508px;
+}
+.oweners__carousel-img {
+    border: 9px solid #f2e8e8;
+}
+.oweners__carousel-sign {
+    background-color: #1a425a;
+    color: #ffffff;
+}

@@ -419,6 +419,10 @@ input[type='radio'].visually-hidden {
 .properties__item:last-child {
     margin-right: 0;
 }
+.properties__item:hover .properties__img img {
+    transition: 0.2s;
+    transform: scale(1.05,1.05);
+}
 .properties__img {
     width: 222px;
     height: 147px;

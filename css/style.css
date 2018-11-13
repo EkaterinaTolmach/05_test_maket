@@ -593,3 +593,23 @@ input[type='radio'].visually-hidden {
     border-right: 1px solid #ffffff;
     border-top: 1px solid #ffffff;
 }
+.socials {
+    justify-content: flex-start;
+    width: 470px;
+}
+.socials__item {
+    text-decoration: none;
+    display: block;
+    width: 47px;
+    height: 47px;
+    margin-right: 15px;
+}
+.social-ico__facebook {
+    background: url("../img/facebook.png") center no-repeat;
+}
+.social-ico__twitter {
+    background: url("../img/twitter.png") center no-repeat;
+}
+.social-ico__google-plus {
+    background: url("../img/google_+.png") center no-repeat;
+}

@@ -637,3 +637,20 @@ input[type='radio'].visually-hidden {
 .social-ico__google-plus {
     background: url("../img/google_+.png") center no-repeat;
 }
+.signup__not-member::after {
+    display: block;
+    content: "";
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(to top left, #679abb 0%, #82bbdf 100%);
+    position: absolute;
+    top: 6px;
+    right: -17px;
+    transform: rotateZ(45deg);
+    border-right: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+}
+.signup__not-member:hover::after {
+    background: linear-gradient(to top left, #ff6e02 0%, #ffa765 100%);
+    transition: all 0.3s;
+}

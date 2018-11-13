@@ -396,3 +396,60 @@ input[type='radio'].visually-hidden {
     font-size: 13px;
     line-height: 22px;
 }
+.properties {
+    width: 100%;
+}
+.properties__wrap {
+    margin: 0 auto;
+    padding: 20px 0 31px;
+    max-width: 980px;
+}
+.properties__row {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 21px;
+}
+.properties__row:last-child {
+    margin-bottom: 0;
+}
+.properties__item {
+    margin-right: 19px;
+    text-decoration: none;
+}
+.properties__item:last-child {
+    margin-right: 0;
+}
+.properties__img {
+    width: 222px;
+    height: 147px;
+    border: 6px solid #e1dede;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.properties__descr {
+    background-color: #4f8fb7;
+    padding: 6px 12px 10px 11px;
+    border-radius: 0 0 5px 5px;
+    height: 55px;
+    color: #ffffff;
+    font-family: "MS Sans Serif", arial, sans-serif;
+    font-size: 17px;
+    line-height: 19.31px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: left;
+}
+.properties__address {
+    font-family: "Arial MT", arial, sans-serif;
+    font-size: 15px;
+}
+.properties__descr::after {
+    display: block;
+    content: "";
+    margin: auto 0;
+    width: 33px;
+    height: 27px;
+}

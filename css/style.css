@@ -346,6 +346,11 @@ input[type='radio'].visually-hidden {
     font-size: 22px;
     border-radius: 8px;
     margin-top: 32px;
+    transition: background 0.3s;
+}
+.tenants__search:hover {
+    background: linear-gradient(to top, #ff6e02 0%, #ffa765 100%);
+    transition: background 0.3s;
 }
 .oweners__oweners-radio:checked ~ .tenants__wrap {
     display: none;

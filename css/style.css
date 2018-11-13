@@ -59,7 +59,7 @@ h2 {
     height: 59px;
     background: url("../img/logo-main.png") no-repeat center center;
 }
-.header__logo-slogan {
+.header__slogan {
     text-align: right;
     color: #ffffff;
     font-family: "Microsoft New Tai Lue", arial, sans-serif;
@@ -78,7 +78,7 @@ h2 {
 }
 .header__nav {
     width: 100%;
-    padding: 17px 0 10px;
+    /*padding: 17px 0 10px;*/
     border-bottom: 4px solid transparent;
     border-image: radial-gradient(circle closest-corner at 30% 0%, #6e9cb8, #4b83a6) 1;
     background: #d7d7d7 radial-gradient(circle at 30% 50%, #eaeaea, transparent);
@@ -86,6 +86,8 @@ h2 {
 .header__top-menu {
     width: 500px;
     justify-content: space-between;
+    list-style: none;
+    margin: 0;
     font-family: "MS Sans Serif", arial, sans-serif;
     font-size: 16px;
 }
@@ -96,21 +98,21 @@ h2 {
     justify-content: center;
     color: #3a5362;
     position: relative;
-    padding: 0 10px;
+    padding: 17px 10px 10px;
     z-index: 100;
     transition: 0.2s;
 }
-.header__top-menu-item:before {
+.header__top-menu-item::before {
     display: none;
     content: "";
     position: absolute;
     width: 106px;
     height: 44px;
-    bottom: -18px;
+    bottom: -8px;
     background: url("../img/ico-menu-active.png") center no-repeat;
     z-index: -100;
 }
-.header__top-menu-item:active:before {
+.header__top-menu-item:active::before {
     display: block;
 }
 .header__top-menu-item:active {
@@ -129,9 +131,11 @@ h2 {
 }
 .header__authorization {
     width: 130px;
+    margin: auto 0;
     color: #3a5362;
     font-family: "MS Sans Serif", arial, sans-serif;
     font-size: 16px;
+    align-items: center;
 }
 .oweners {
     width: 100%;

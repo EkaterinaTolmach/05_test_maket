@@ -520,6 +520,11 @@ input[type='radio'].visually-hidden {
     color: #ffffff;
     font-family: "Arial MT", arial, sans-serif;
     font-size: 16px;
+    transition: background 0.5s;
+}
+.subscribing__btn:hover {
+    background: linear-gradient(to top, #ff6e02 0%, #ffa765 100%);
+    transition: background 0.5s;
 }
 .email {
     padding: 11px 21px 23px 22px;

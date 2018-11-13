@@ -35,6 +35,21 @@
 h2 {
     margin: 0;
 }
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .flex-row {
     display: flex;
     flex-direction: row;
@@ -42,7 +57,7 @@ h2 {
 }
 .header__info {
     width: 100%;
-    padding: 15px 0 16px;
+    padding: 15px 0 13px;
     background: #4b83a6 radial-gradient(circle closest-corner at 30% 100%, #6e9cb8, transparent);
 }
 .header__wrap {
@@ -88,21 +103,23 @@ h2 {
     justify-content: space-between;
     list-style: none;
     margin: 0;
+    padding: 0;
     font-family: "MS Sans Serif", arial, sans-serif;
     font-size: 16px;
 }
-.header__top-menu-item {
+.top-navigation__top-menu-item {
+    box-sizing: border-box;
     width: 106px;
     text-decoration: none;
     display: flex;
     justify-content: center;
     color: #3a5362;
     position: relative;
-    padding: 17px 10px 10px;
+    padding: 14px 10px 10px;
     z-index: 100;
     transition: 0.2s;
 }
-.header__top-menu-item::before {
+.top-navigation__top-menu-item::before {
     display: none;
     content: "";
     position: absolute;
@@ -112,13 +129,13 @@ h2 {
     background: url("../img/ico-menu-active.png") center no-repeat;
     z-index: -100;
 }
-.header__top-menu-item:active::before {
+.top-navigation__top-menu-item:active::before {
     display: block;
 }
-.header__top-menu-item:active {
+.top-navigation__top-menu-item:active {
     color: #ffffff;
 }
-.header__top-menu-item:hover {
+.top-navigation__top-menu-item:hover {
     color: #ff9f57;
 }
 .header__sign-in, .header__sign-up {
@@ -149,15 +166,20 @@ h2 {
 .oweners__tenants-radio, .oweners__oweners-radio {
     display: none;
 }
-.oweners__carousel-wrap {
+.oweners__carousel {
     max-width: 508px;
 }
-.oweners__carousel-img {
+.carousel__item {
     display: flex;
     flex-direction: column;
     border: 9px solid #f2e8e8;
 }
-.oweners__carousel-sign {
+.carousel__img {
+    width: 489px;
+    height: 253px;
+    overflow: hidden;
+}
+.carousel__sign {
     height: 66px;
     background-color: #1a425a;
     color: #ffffff;
@@ -165,32 +187,32 @@ h2 {
     padding: 5px 0 0 26px;
     box-sizing: border-box;
 }
-.oweners__carousel-sign-title {
+.carousel__title {
     color: #ffffff;
     text-decoration: none;
     font-size: 20px;
     line-height: 34px;
 
 }
-.oweners__carousel-sign-descr {
+.carousel__descr {
     font-size: 14px;
 }
-.oweners__carousel-controls {
+.carousel__controls {
     padding: 12px 0 0;
     margin: 0 auto;
     justify-content: center;
 }
-.oweners__carousel-controls-item {
+.carousel__controls-item {
     width: 10px;
     height: 10px;
     margin-left: 8px;
     background-color: #ffffff;
     border-radius: 50%;
 }
-.oweners__carousel-controls-item:first-child {
+.carousel__controls-item:first-child {
     margin-left: 0;
 }
-.oweners__carousel-controls-item--active {
+.carousel__controls-item--active {
     background-color: #2c5f7f;
 }
 .oweners__filter {
@@ -240,10 +262,13 @@ h2 {
 }
 .tenants__wrap, .oweners__wrap {
     padding: 18px 40px 0;
-    display: flex;
     border-radius: 0 10px 0;
-    flex-direction: column;
     background: linear-gradient(#5596bf 0%, transparent 60%);
+}
+.tenants__filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 .oweners__wrap {
     display: none;
@@ -267,6 +292,7 @@ h2 {
     font-family: "MS Sans Serif", arial, sans-serif;
     font-size: 17px;
     padding-left: 19px;
+    margin: 17px 0 10px;
 }
 .tenants__address-field::placeholder {
     color: #347095;
@@ -275,10 +301,8 @@ h2 {
     color: transparent;
     transition: 0.2s;
 }
-.tenants__address-field--in-filter {
-    margin: 17px 0 10px;
-}
 .tenants__check-includes {
+    margin-right: auto;
     display: flex;
     align-items: center;
     color: #ffffff;
@@ -295,8 +319,6 @@ h2 {
     background-image: linear-gradient(to top, rgba(187, 187, 187, 0.4) 0%, rgba(209, 209, 209, 0.4) 50%, rgba(188, 188, 188, 0.4) 52%, rgba(187, 187, 187, 0.4) 100%);
 }
 .tenants__property-choose, .tenants__bedrooms-choose {
-    justify-content: flex-end;
-    align-items: center;
     color: #ffffff;
     font-family: "Arial MT", arial, sans-serif;
     font-size: 16px;
@@ -323,10 +345,7 @@ h2 {
     font-family: "Arial MT", arial, sans-serif;
     font-size: 22px;
     border-radius: 8px;
-}
-.search--in-form {
     margin-top: 32px;
-    margin-left: 135px;
 }
 .oweners__oweners-radio:checked ~ .tenants__wrap {
     display: none;

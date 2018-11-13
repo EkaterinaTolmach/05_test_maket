@@ -624,6 +624,10 @@ input[type='radio'].visually-hidden {
     height: 47px;
     margin-right: 15px;
 }
+.socials__item:hover {
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
 .social-ico__facebook {
     background: url("../img/facebook.png") center no-repeat;
 }

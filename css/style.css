@@ -452,4 +452,5 @@ input[type='radio'].visually-hidden {
     margin: auto 0;
     width: 33px;
     height: 27px;
+    background: url("../img/ico_search.png") center no-repeat;
 }

@@ -24,22 +24,22 @@
         </div>
         <div class="header__nav">
             <div class="header__wrap flex-row">
-                <nav >
-                    <ul class="header__top-menu flex-row">
+                <nav>
+                    <ul class="header__top-menu top-navigation flex-row">
                         <li>
-                            <a href="#" class="header__top-menu-item">Home</a>
+                            <a href="#" class="top-navigation__top-menu-item">Home</a>
                         </li>
                         <li>
-                            <a href="#" class="header__top-menu-item">Our Story</a>
+                            <a href="#" class="top-navigation__top-menu-item">Our Story</a>
                         </li>
                         <li>
-                            <a href="#" class="header__top-menu-item">Tenant</a>
+                            <a href="#" class="top-navigation__top-menu-item">Tenant</a>
                         </li>
                         <li>
-                            <a href="#" class="header__top-menu-item">Owner</a>
+                            <a href="#" class="top-navigation__top-menu-item">Owner</a>
                         </li>
                         <li>
-                            <a href="#" class="header__top-menu-item">Contact us</a>
+                            <a href="#" class="top-navigation__top-menu-item">Contact us</a>
                         </li>
                     </ul>
                 </nav>
@@ -52,24 +52,27 @@
         </div>
     </header>
     <main class="main">
+        <h1 class="visually-hidden">Realestate company</h1>
         <div class="oweners">
             <div class="oweners__container flex-row">
-                <div class="oweners__carousel-wrap">
-                    <div class="oweners__carousel-img">
-                        <img src="img/carousel.jpg" alt="carousel-item" title="carousel-item">
-                        <div class="oweners__carousel-sign">
-                            <a href="#" class="oweners__carousel-sign-title">Lorem Ipsum is simply dummy text of </a>
-                            <div class="oweners__carousel-sign-descr">
+                <div class="oweners__carousel carousel">
+                    <div class="carousel__item">
+                        <div class="carousel__img">
+                            <img src="img/carousel.jpg" alt="carousel-item" title="carousel-item">
+                        </div>
+                        <div class="carousel__sign">
+                            <a href="#" class="carousel__title">Lorem Ipsum is simply dummy text of </a>
+                            <div class="carousel__descr">
                                 We work with investors to make managing your investments easy!
                             </div>
                         </div>
                     </div>
-                    <div class="oweners__carousel-controls flex-row">
-                        <div class="oweners__carousel-controls-item"></div>
-                        <div class="oweners__carousel-controls-item"></div>
-                        <div class="oweners__carousel-controls-item oweners__carousel-controls-item--active"></div>
-                        <div class="oweners__carousel-controls-item"></div>
-                        <div class="oweners__carousel-controls-item"></div>
+                    <div class="carousel__controls flex-row">
+                        <div class="carousel__controls-item"></div>
+                        <div class="carousel__controls-item"></div>
+                        <div class="carousel__controls-item carousel__controls-item--active"></div>
+                        <div class="carousel__controls-item"></div>
+                        <div class="carousel__controls-item"></div>
                     </div>
                 </div>
                 <div class="oweners__filter">
@@ -79,7 +82,7 @@
 
                     <label for="oweners-filter" class="oweners__oweners-name">Oweners</label>
                     <div class="tenants__wrap">
-                        <form name="find-tenants-property" method="post" action="" enctype="text/plain">
+                        <form class="tenants__filter" name="find-tenants-property" method="post" action="" enctype="text/plain">
                             <label class="tenants__address">
                                 Address, Suburbs, Postcodes, or Regions
                                 <input class="tenants__address-field tenants__address-field--in-filter" type="text" name="address-field" placeholder="Example: Wichita Falls, Texas 76301">
@@ -88,7 +91,7 @@
                                 <input class="tenants__checkbox tenants__checkbox--in-form" type="checkbox" name="include-suburbs">
                                 Include surrounding suburbs
                             </label>
-                            <label class="tenants__property-choose flex-row">
+                            <label class="tenants__property-choose">
                                 Property Type :
                                 <select name="property-select" class="tenants__property-select select">
                                     <option value="Select one" selected>Select one</option>
@@ -96,7 +99,7 @@
                                     <option value="Select three">Select three</option>
                                 </select>
                             </label>
-                            <label class="tenants__bedrooms-choose flex-row">
+                            <label class="tenants__bedrooms-choose">
                                 Bedrooms :
                                 <select name="bedrooms-select" class="tenants__bedrooms-select select">
                                     <option value="Select one" selected>Select one</option>
@@ -104,7 +107,7 @@
                                     <option value="Select three">Select three</option>
                                 </select>
                             </label>
-                            <button type="submit" class="tenants__search search--in-form">Search</button>
+                            <button type="submit" class="tenants__search">Search</button>
                         </form>
                     </div>
                     <div class="oweners__wrap">

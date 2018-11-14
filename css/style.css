@@ -697,11 +697,10 @@ input[type='radio'].visually-hidden {
 .testimonials-carousel__item {
     position: relative;
 }
+
 .testimonials-carousel__controls {
-    position: absolute;
-    top: 0;
-    right: 90px;
     width: 40px;
+    margin-right: 91px;
 }
 .testimonials-carousel__prev {
     width: 16px;

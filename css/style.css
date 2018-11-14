@@ -580,10 +580,6 @@ input[type='radio'].visually-hidden {
     background: linear-gradient(to top, #ff6e02 0%, #ffa765 100%);
     transition: all 0.3s;
 }
-.signup__not-member:hover .signup__arrow{
-    background: linear-gradient(to top left, #ff6e02 0%, #ffa765 100%);
-    transition: all 0.3s;
-}
 .signup__signup-now {
     display: flex;
     align-items: center;
@@ -601,17 +597,6 @@ input[type='radio'].visually-hidden {
 .signup__signup-now:hover {
     background: linear-gradient(to top, #ff6e02 0%, #ffa765 100%);
     transition: all 0.3s;
-}
-.signup__arrow {
-    width: 32px;
-    height: 32px;
-    background: linear-gradient(to top left, #679abb 0%, #82bbdf 100%);
-    position: absolute;
-    top: 6px;
-    right: -17px;
-    transform: rotateZ(45deg);
-    border-right: 1px solid #ffffff;
-    border-top: 1px solid #ffffff;
 }
 .socials {
     justify-content: flex-start;
@@ -640,8 +625,8 @@ input[type='radio'].visually-hidden {
 .signup__not-member::after {
     display: block;
     content: "";
-    width: 32px;
-    height: 32px;
+    width: 31px;
+    height: 31px;
     background: linear-gradient(to top left, #679abb 0%, #82bbdf 100%);
     position: absolute;
     top: 6px;

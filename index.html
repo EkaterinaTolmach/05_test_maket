@@ -55,9 +55,9 @@
     </header>
     <main class="main">
         <h1 class="visually-hidden">Realestate company</h1>
-        <div class="oweners">
-            <div class="oweners__container flex-row">
-                <div class="oweners__carousel carousel">
+        <div class="offers">
+            <div class="offers__container flex-row">
+                <div class="offers__carousel carousel">
                     <div class="carousel__item">
                         <div class="carousel__img">
                             <img src="img/carousel.jpg" alt="carousel-item" title="carousel-item">
@@ -121,46 +121,17 @@
                         <div class="carousel__controls-item"></div>
                     </div>-->
                 </div>
-                <div class="oweners__filter">
-                    <input class="oweners__tenants-radio" id="tenants-filter" type="radio" name="tenants-oweners">
-                    <input class="oweners__oweners-radio" id="oweners-filter" type="radio" name="tenants-oweners">
-                    <label for="tenants-filter" class="oweners__tenants-name">Tenants</label>
+                <div class="offers__filters filter">
+                    <input class="filter__tenants-radio" id="tenants-filter" type="radio" name="tenants-oweners">
+                    <input class="filter__oweners-radio" id="oweners-filter" type="radio" name="tenants-oweners">
+                    <label for="tenants-filter" class="filter__tenants-title">Tenants</label>
 
-                    <label for="oweners-filter" class="oweners__oweners-name">Oweners</label>
-                    <div class="tenants__wrap">
-                        <form class="tenants__filter" name="find-tenants-property" method="post" action="" enctype="text/plain">
+                    <label for="oweners-filter" class="filter__oweners-title">Oweners</label>
+                    <div class="filters__container tenants">
+                        <form class="tenants__form" name="find-tenants-property" method="post" action="" enctype="text/plain">
                             <label class="tenants__address">
                                 Address, Suburbs, Postcodes, or Regions
-                                <input class="tenants__address-field tenants__address-field--in-filter" type="text" name="address-field" placeholder="Example: Wichita Falls, Texas 76301">
-                            </label>
-                            <label class="tenants__check-includes">
-                                <input class="tenants__checkbox tenants__checkbox--in-form" type="checkbox" name="include-suburbs">
-                                Include surrounding suburbs
-                            </label>
-                            <label class="tenants__property-choose">
-                                Property Type :
-                                <select name="property-select" class="tenants__property-select select">
-                                    <option value="Select one" selected>Select one</option>
-                                    <option value="Select two">Select two</option>
-                                    <option value="Select three">Select three</option>
-                                </select>
-                            </label>
-                            <label class="tenants__bedrooms-choose">
-                                Bedrooms :
-                                <select name="bedrooms-select" class="tenants__bedrooms-select select">
-                                    <option value="Select one" selected>Select one</option>
-                                    <option value="Select two">Select two</option>
-                                    <option value="Select three">Select three</option>
-                                </select>
-                            </label>
-                            <button type="submit" class="tenants__search">Search</button>
-                        </form>
-                    </div>
-                    <div class="oweners__wrap">
-                        <form name="find-oweners-property" method="post" action="" enctype="text/plain">
-                            <label class="tenants__address">
-                                Address, Suburbs, Postcodes, or Regions
-                                <input class="tenants__address-field tenants__address-field--in-filter" type="text" name="address-field" placeholder="Example: Wichita Falls, Texas 76301">
+                                <input class="tenants__address-field" type="text" name="address-field" placeholder="Example: Wichita Falls, Texas 76301">
                             </label>
                             <label class="tenants__check-includes">
                                 <input class="tenants__checkbox tenants__checkbox--in-form" type="checkbox" name="include-suburbs">
@@ -168,7 +139,7 @@
                             </label>
                             <label class="tenants__property-choose flex-row">
                                 Property Type :
-                                <select name="property-select" class="tenants__property-select select">
+                                <select name="tenants-property-select" class="tenants__property-select select">
                                     <option value="Select one" selected>Select one</option>
                                     <option value="Select two">Select two</option>
                                     <option value="Select three">Select three</option>
@@ -176,13 +147,42 @@
                             </label>
                             <label class="tenants__bedrooms-choose flex-row">
                                 Bedrooms :
-                                <select name="bedrooms-select" class="tenants__bedrooms-select select">
+                                <select name="tenants-bedrooms-select" class="tenants__bedrooms-select select">
                                     <option value="Select one" selected>Select one</option>
                                     <option value="Select two">Select two</option>
                                     <option value="Select three">Select three</option>
                                 </select>
                             </label>
-                            <button type="submit" class="tenants__search">Search</button>
+                            <button type="submit" name="tenants-search" class="tenants__search">Search</button>
+                        </form>
+                    </div>
+                    <div class="filters__container oweners">
+                        <form class="oweners__form" name="find-oweners-property" method="post" action="" enctype="text/plain">
+                            <label class="oweners__address">
+                                Address, Suburbs, Postcodes, or Regions
+                                <input class="oweners__address-field" type="text" name="address-field" placeholder="Example: Big Lake, NY 32123">
+                            </label>
+                            <label class="oweners__check-includes">
+                                <input class="oweners__checkbox" type="checkbox" name="include-suburbs">
+                                Include surrounding suburbs
+                            </label>
+                            <label class="oweners__property-choose flex-row">
+                                Property Type :
+                                <select name="oweners-property-select" class="oweners__property-select select">
+                                    <option value="Select one" selected>Select one</option>
+                                    <option value="Select two">Select two</option>
+                                    <option value="Select three">Select three</option>
+                                </select>
+                            </label>
+                            <label class="oweners__bedrooms-choose flex-row">
+                                Bedrooms :
+                                <select name="oweners-bedrooms-select" class="oweners__bedrooms-select select">
+                                    <option value="Select one" selected>Select one</option>
+                                    <option value="Select two">Select two</option>
+                                    <option value="Select three">Select three</option>
+                                </select>
+                            </label>
+                            <button type="submit" name="oweners-search" class="oweners__search">Search</button>
                         </form>
                     </div>
                 </div>

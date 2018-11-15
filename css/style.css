@@ -169,19 +169,16 @@ input[type='radio'].visually-hidden {
     font-size: 16px;
     align-items: center;
 }
-.oweners {
+.offers{
     width: 100%;
     background: #4b83a6 linear-gradient(to top right, #316c92 0%, #5289ad 25%, #5696bd 40%, #3686b8 60%, #5289ad 75%, #316c92 100%);
 }
-.oweners__container {
+.offers__container {
     margin: 0 auto;
     max-width: 980px;
     padding: 19px 20px 7px 8px;
 }
-.oweners__tenants-radio, .oweners__oweners-radio {
-    display: none;
-}
-.oweners__carousel {
+.offers__carousel {
     max-width: 507px;
     max-height: 338px;
     border: 9px solid #f2e8e8;
@@ -230,10 +227,13 @@ input[type='radio'].visually-hidden {
 .carousel__controls-item--active {
     background-color: #2c5f7f;
 }
-.oweners__filter {
+.filter {
     max-width: 419px;
 }
-.oweners__tenants-name {
+.filter__tenants-radio, .filter__oweners-radio {
+    display: none;
+}
+.filter__tenants-title {
     cursor: pointer;
     transition: 0.3s;
     display: flex;
@@ -250,10 +250,10 @@ input[type='radio'].visually-hidden {
     font-size: 22px;
     border: 1px solid transparent;
 }
-.oweners__tenants-name:hover {
+.filter__tenants-title:hover {
     border-top: 1px solid #ff9f57;
 }
-.oweners__oweners-name {
+.filter__oweners-title {
     cursor: pointer;
     transition: 0.3s;
     width: 132px;
@@ -269,35 +269,34 @@ input[type='radio'].visually-hidden {
     font-size: 22px;
     border: 1px solid transparent;
 }
-.oweners__oweners-name:hover {
+.filter__oweners-title:hover {
     border-top: 1px solid #ff9f57;
 }
-.oweners__oweners-name:checked:hover {
+.filter__oweners-title:checked:hover {
     border: 1px solid transparent;
 }
-.tenants__wrap, .oweners__wrap {
+.filters__container {
     padding: 18px 40px 0;
     border-radius: 0 10px 0;
     background: linear-gradient(#5596bf 0%, transparent 60%);
 }
-.tenants__filter {
+.tenants__form, .oweners__form {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
 }
-.oweners__wrap {
+.oweners {
     display: none;
 }
-.tenants__checkbox--in-form {
-    margin-left: 8px;
-}
-.tenants__address {
+
+.tenants__address, .oweners__address {
     color: #ffffff;
     font-family: "Arial MT", arial, sans-serif;
     font-size: 16px;
     line-height: 21px;
 }
-.tenants__address-field {
+.tenants__address-field, .oweners__address-field {
+    outline: none;
     width: 100%;
     height: 48px;
     border: 3px solid #316e94;
@@ -309,14 +308,14 @@ input[type='radio'].visually-hidden {
     padding-left: 19px;
     margin: 17px 0 10px;
 }
-.tenants__address-field::placeholder {
+.tenants__address-field::placeholder, .oweners__address-field::placeholder {
     color: #347095;
 }
-.tenants__address-field:focus::placeholder {
+.tenants__address-field:focus::placeholder, .oweners__address-field:focus::placeholder {
     color: transparent;
     transition: 0.2s;
 }
-.tenants__check-includes {
+.tenants__check-includes, .oweners__check-includes {
     margin-right: auto;
     display: flex;
     align-items: center;
@@ -324,8 +323,9 @@ input[type='radio'].visually-hidden {
     font-family: "Arial MT", arial, sans-serif;
     font-size: 16px;
 }
-.tenants__checkbox {
+.tenants__checkbox, .oweners__checkbox{
     margin-right: 11px;
+    margin-left: 8px;
     width: 18px;
     height: 18px;
     box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.07);
@@ -333,11 +333,14 @@ input[type='radio'].visually-hidden {
     border-radius: 2px;
     background-image: linear-gradient(to top, rgba(187, 187, 187, 0.4) 0%, rgba(209, 209, 209, 0.4) 50%, rgba(188, 188, 188, 0.4) 52%, rgba(187, 187, 187, 0.4) 100%);
 }
-.tenants__property-choose, .tenants__bedrooms-choose {
+.tenants__property-choose, .tenants__bedrooms-choose, .oweners__property-choose, .oweners__bedrooms-choose {
+    width: 100%;
+    justify-content: flex-end;
     color: #ffffff;
     font-family: "Arial MT", arial, sans-serif;
     font-size: 16px;
     margin-top: 16px;
+    align-items: center;
 }
 .select {
     width: 204px;
@@ -347,11 +350,15 @@ input[type='radio'].visually-hidden {
     box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.07), inset 0 0 0 2px #fcfdfd;
     border: 1px solid #bbbbbb;
     background-image: linear-gradient(to top, rgba(244, 244, 244, 0.4) 0%, rgba(243, 243, 243, 0.4) 50%, rgba(255, 255, 255, 0.4) 52%, rgba(255, 255, 255, 0.4) 100%);
+    font-family: "Lucida Sans", arial, sans-serif;
+    font-size: 14px;
+    padding-left: 16px;
+    outline: none;
 }
 .select option {
     color: #6693ae;
 }
-.tenants__search {
+.tenants__search, .oweners__search {
     width: 204px;
     height: 47px;
     border: 3px solid #d7d7d7;
@@ -367,19 +374,19 @@ input[type='radio'].visually-hidden {
     background: linear-gradient(to top, #ff6e02 0%, #ffa765 100%);
     transition: background 0.3s;
 }
-.oweners__oweners-radio:checked ~ .tenants__wrap {
+.filter__oweners-radio:checked ~ .tenants {
     display: none;
 }
-.oweners__oweners-radio:checked ~ .oweners__tenants-name {
+.filter__oweners-radio:checked ~ .filter__tenants-title {
     background-color: #c2f2ed;
     color: #4b83a6;
 }
-.oweners__oweners-radio:checked ~ .oweners__oweners-name {
+.filter__oweners-radio:checked ~ .filter__oweners-title {
     background-color: #5596bf;
     color: #ffffff;
 }
-.oweners__oweners-radio:checked ~ .oweners__wrap {
-    display: flex;
+.filter__oweners-radio:checked ~ .oweners {
+    display: block;
 }
 .services {
     width: 100%;

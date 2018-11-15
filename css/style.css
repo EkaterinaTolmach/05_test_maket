@@ -688,47 +688,45 @@ input[type='radio'].visually-hidden {
     height: 36px;
     background-size: contain;
 }
-.footer__carousel {
+.footer__testimonials {
     margin-right: 19px;
 }
-.testimonials-carousel {
+.testimonials {
     max-width: 320px;
 }
-.testimonials-carousel__item {
-    position: relative;
-}
 
-.testimonials-carousel__controls {
+.testimonials__controls {
     width: 40px;
     margin-right: 91px;
 }
-.testimonials-carousel__prev {
+.testimonials__prev {
     width: 16px;
     height: 16px;
     display: block;
     text-decoration: none;
     background: url("../img/ico_controls_prev.png") center no-repeat;
 }
-.testimonials-carousel__next {
+.testimonials__next {
     width: 16px;
     height: 16px;
     display: block;
     text-decoration: none;
     background: url("../img/ico_controls_next.png") center no-repeat;
 }
-.testimonials-carousel__title {
+.testimonials__title {
     color: #ffffff;
     font-size: 16px;
     font-family: "Arial-BoldMT", arial, sans-serif;
     margin-bottom: 13px;
 }
-.testimonials-carousel__text {
+.testimonials__text {
     color: rgba(255, 255, 255, 0.8);
     font-family: "Arial MT", arial, sans-serif;
     font-size: 13px;
     line-height: 22px;
+    padding-left: 1px; /*чтобы из другого слайдера не торчали кусочки букв*/
 }
-.testimonials-carousel__author {
+.testimonials__author {
     color: #ffffff;
     font-family: "Arial-BoldMT", arial, sans-serif;
     font-size: 13px;

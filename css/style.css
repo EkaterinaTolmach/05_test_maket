@@ -307,13 +307,14 @@ input[type='radio'].visually-hidden {
     font-size: 17px;
     padding-left: 19px;
     margin: 17px 0 10px;
+    transition: color 0.2s;
 }
 .tenants__address-field::placeholder, .oweners__address-field::placeholder {
     color: #347095;
 }
 .tenants__address-field:focus::placeholder, .oweners__address-field:focus::placeholder {
     color: transparent;
-    transition: 0.2s;
+    transition: color 0.2s;
 }
 .tenants__check-includes, .oweners__check-includes {
     margin-right: auto;

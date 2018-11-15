@@ -182,12 +182,12 @@ input[type='radio'].visually-hidden {
     display: none;
 }
 .oweners__carousel {
-    max-width: 508px;
+    max-width: 507px;
+    max-height: 338px;
+    border: 9px solid #f2e8e8;
 }
 .carousel__item {
-    display: flex;
-    flex-direction: column;
-    border: 9px solid #f2e8e8;
+    width: 507px;
 }
 .carousel__img {
     width: 489px;

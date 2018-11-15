@@ -1,5 +1,15 @@
 $(document).ready(function() {
 
+    if($('.carousel')) {
+        $('.carousel').slick({
+            infinite: true,
+            dots: true,
+            arrows: false,
+            autoPlay: true,
+            autoplaySpeed: 5000,
+            initialSlide: 2
+        });
+    }
 
     if($('.testimonials__carousel')) {
         $('.testimonials__carousel').slick({
